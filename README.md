@@ -1,4 +1,4 @@
-# Git-help
+# Git-helper
 
 This is a function to help learn git with oh-my-zsh's [git aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git). Run the program, and start typing the command you'd like to use, and all aliases for that command will appear. Alternatively, pass the query as an argument to the function.
 
