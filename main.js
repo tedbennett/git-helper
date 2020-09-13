@@ -1,3 +1,5 @@
+const { data } = require('./data');
+
 process.stdin.setRawMode(true);
 
 process.stdin.resume();
@@ -5,6 +7,7 @@ process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
 let keys = '';
+let results = [];
 console.clear();
 console.log('Enter search: ');
 
