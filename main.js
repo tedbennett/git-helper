@@ -33,4 +33,14 @@ process.stdin.on('data', (key) => {
 
   console.clear();
   console.log(`Enter search: ${keys}`);
+
+  if (keys !== '') {
+    results = Object.keys(data)
+      .filter((command) => command.includes(keys))
+      .slice(0, process.stdout.rows - 2);
+
+    results.forEach((result) => console.log(`${data[result].padEnd(10, ' ')} - ${result}`));
+  } else {
+    results = [];
+  }
 });
